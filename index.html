@@ -99,6 +99,24 @@
                             <span class="legend">Previsão do uso d Computação Quântica para o Futuro</span>
                         </div>
                     </div>
+                    <div class="utils">
+                        <h3>Recomendações e Links Úteis</h3>
+                        <a href="https://www.ibm.com/topics/quantum-computing"> Conteúdo explicativo sobre Computação
+                            Quântica produzida pela <strong>IBM</strong>, empresa que aposta nessa tecnologia</a>
+                        <a
+                            href="https://books.google.com.br/books?id=U1chAwAAQBAJ&printsec=frontcover&hl=pt-BR#v=onepage&q&f=false">E-book
+                            produzido pela universidade de <strong>Cambridge</strong> para aprofundar em Computação Quântica</a>
+                        <a
+                            href="https://www.zhinst.com/americas/en/quantum-computing-systems/qccs?gclid=CjwKCAiAx_GqBhBQEiwAlDNAZhls-IUBzE8AUcp_LAc0n_v1rZ9Sqpd3qnZ5o7LqTamyHHhaos-onhoC7EYQAvD_BwE&hsa_acc=8252128723&hsa_ad=307345495807&hsa_cam=1615916808&hsa_grp=63839692271&hsa_kw=quantum%20computing&hsa_mt=p&hsa_net=adwords&hsa_src=g&hsa_tgt=kwd-302451812790&hsa_ver=3&utm_campaign=QT%20I%20QC%20systems&utm_medium=ppc&utm_source=adwords&utm_term=quantum%20computing">Sistema
+                            de controle de computação quântica</a>
+                        <span>Guia animado para explicar computação quântica produzido pela
+                            <strong>Microsoft</strong>:</span>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/glLPHgRle7o?si=sxWwcEtrY853vBku"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
                 </section>
                 <section id="join">
                     <h2>Como Ingressar</h2>
@@ -106,6 +124,7 @@
                         <p>Aqui você encontra muitas sugestões para se aprofundar na área de computação quântica, entrar
                             nesse mercado e conhecer o que fazem os profissionais da área, seu dia a dia e outras
                             curiosidades</p>
+
                         <div class="box-card">
                             <h3>💻 Tutorial</h3>
                             <p>Um tutorial destinado a programadores, visando a compreensão e introdução à Computação
@@ -177,6 +196,8 @@
                                     MAIS</a></button>
                         </div>
                     </div>
+                    <a href="https://quantumai.google/cirq"><button class="google-button">Computação Quântica na
+                        Prática</button></a>
                 </section>
                 <section id="applications">
                     <h2>Aplicações Práticas</h2>
@@ -264,6 +285,18 @@
             </main>
         </div>
     </div>
+    <script>
+        const button = document.querySelector('.google-button');
+        function blink() {
+            setTimeout(() => {
+                button.style.backgroundColor = (button.style.backgroundColor === 'white') ? '#4285f4' : 'white';
+                button.style.color = (button.style.color === 'white') ? 'black' : 'white';
+                button.style.color = (button.style.color === 'black') ? 'white' : 'black';
+                blink();
+            }, 500);
+        }
+        blink();
+    </script>
 </body>
 
 </html>

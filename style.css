@@ -89,7 +89,7 @@ h4 {
 }
 
 span {
-  color: rgb(0, 97, 187);
+  color: #333;
   font-weight: bold;
 }
 
@@ -161,6 +161,34 @@ button:hover {
   color: white;
   text-decoration: none;
   font-family: 'Titillium Web', sans-serif;
+}
+
+.utils{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.utils h3{
+ padding-bottom: 1rem;
+}
+
+.utils a{
+ padding-bottom: 1rem;
+}
+
+.google-button {
+  margin-top: 1rem;
+  width: 20em;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  background-color: #4285f4; /* Cor de fundo inicial */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave */
 }
 
 @media screen and (max-width: 768px) {
