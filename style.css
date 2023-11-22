@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Exo:wght@300;600&family=Montserrat&family=Titillium+Web&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -11,9 +14,19 @@ body {
 
 .container {
   display: flex;
+  max-width: 90%;
+}
+
+.content {
+  width: 100%;
+  margin-left: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sidebar {
+  position: fixed;
   background-color: #333;
   color: #fff;
   width: 250px;
@@ -46,7 +59,7 @@ header {
 }
 
 .banner {
-  background-color: #ddd;
+  background-color: rgb(150, 208, 255);
   padding: 20px;
   border-radius: 5px;
 }
@@ -61,20 +74,129 @@ section {
 }
 
 h2 {
+  color: #000;
+  font-size: 1.4em;
+}
+
+h3 {
+  color: rgb(0, 97, 187);
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.1em;
   color: #333;
+}
+
+span {
+  color: rgb(0, 97, 187);
+  font-weight: bold;
+}
+
+button {
+  width: 8em;
+  height: 3em;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 132, 255);
+}
+
+button:hover {
+  background-color: #333;
+  transition: all .2s ease-in-out;
+}
+
+.text {
+  text-align: justify;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.graphics {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.graphics div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.legend{
+  padding-top: 1rem;
+}
+
+.graphics img {
+  width: 25em;
+  height: 20em;
+}
+
+.container-join {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-card {
+  width: 21em;
+  height: 20em;
+  padding: 1rem;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-style: solid;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: rgb(207, 234, 255);
+
+}
+
+.link {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
   .container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .sidebar {
-      width: 100%;
-      order: 2;
+    width: 100%;
+    order: 2;
+    position: unset;
+  }
+
+  .box-card {
+    height: 100%;
+  }
+
+  .container-join {
+    width: 100%;
+  }
+
+  .content {
+    margin-left: unset;
+    flex-direction: column;
   }
 
   header, main {
-      order: 1;
+    order: 1;
+  }
+
+  .graphics {
+    flex-direction: column;
+  }
+
+  .graphics img{
+   width: 20em;
+   height:16em ;
   }
 }
