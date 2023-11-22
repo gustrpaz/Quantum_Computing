@@ -227,4 +227,14 @@ button:hover {
    width: 20em;
    height:16em ;
   }
+
+  iframe{
+    width: 18em;
+    height: 12em;
+  }
+
+  .infographic{
+    width: 20em ;
+    height: 11em;
+  }
 }
