@@ -59,10 +59,19 @@ header {
 }
 
 .banner {
+  height: 30em;
+  width: 100%;
   background-color: rgb(150, 208, 255);
   padding: 20px;
   border-radius: 5px;
 }
+
+/* .banner h1{
+  color: #FFF;
+}
+.banner P{
+  color: #FFF;
+} */
 
 main {
   flex: 4;
@@ -104,6 +113,12 @@ button {
 button:hover {
   background-color: #333;
   transition: all .2s ease-in-out;
+}
+
+.banner{
+  width: 100%;
+  background-image: url('assets/1698429462796.png');
+  background-size: cover;
 }
 
 .text {
@@ -236,5 +251,16 @@ button:hover {
   .infographic{
     width: 20em ;
     height: 11em;
+  }
+   
+  
+  .inicio{
+    width: 50em;
+    height:24em;
+  }
+
+  .banner{
+   width: 25em;
+   height: 12em;
   }
 }
